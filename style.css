@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background: rgb(213, 206, 49);
+    background: linear-gradient(
+        90deg,
+        rgba(213, 206, 49, 1) 24%,
+        rgba(95, 79, 218, 1) 53%,
+        rgba(75, 170, 132, 1) 100%
+    );
+}
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+.wrapper {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgb(136, 186, 202) 0%,
+        rgba(13, 214, 255, 1) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    max-width: 485px;
+    width: 100%;
+    justify-content: center ;
+    padding: 5px;
+}
+.title {
+    align-self: center;
+    padding-top: 2%;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(73, 70, 70);
+    cursor: default;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+}
+.input {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: gray;
+    letter-spacing: 1px;
+    transition: all 0.25s;
+}
+.input:hover {
+    transform: scale(1.05);
+}
+.reg-button, .login-button {
+    background-color: rgb(53, 51, 51);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-bottom: 10px;
+}
+.reg-button:hover, .login-button:hover {
+    transform: scale(1.05);
+}
+.reg-button:active, .login-button:active {
+    opacity: 0.8;
+}
+.second-title {
+    font-size: 15px;
+    cursor: default;
+    font-style: italic;
+    animation: anim 2.5s infinite;
+}
+@keyframes anim {
+    50% {
+        transform: scale(1.05);
+    }
+}
+.checkbox-title {
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(100, 97, 97);
+    cursor: default;
+    margin-bottom: 10px;
+}
+.checkbox {
+    margin-right: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
